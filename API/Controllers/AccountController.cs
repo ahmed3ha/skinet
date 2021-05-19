@@ -13,7 +13,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
 {
-    public class AccountController : BaseApiConrtoller
+    public class AccountController : BaseApiController
     {
         private readonly UserManager<AppUser> _userManager;
         private readonly SignInManager<AppUser> _signInManager;

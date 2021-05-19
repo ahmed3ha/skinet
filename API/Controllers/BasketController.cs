@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace API.Controllers
 {
 
-    public class BasketController : BaseApiConrtoller
+    public class BasketController : BaseApiController
     {
         private readonly IBasketRepository _basketRepository;
         private readonly IMapper _mapper;

@@ -18,7 +18,7 @@ using Microsoft.EntityFrameworkCore;
 namespace API.Controllers
 {
    
-    public class ProductsController : BaseApiConrtoller
+    public class ProductsController : BaseApiController
     {
         private readonly IGenericRepository<Product> _productsRepo;
         private readonly IGenericRepository<ProductType> _productTypeRepo;
