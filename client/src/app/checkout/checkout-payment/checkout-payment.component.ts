@@ -45,7 +45,7 @@ export class CheckoutPaymentComponent implements OnInit {
       deliveryMethodId: +this.checkoutForm
         .get('deliveryForm')
         .get('deliveryMethod').value,
-      shipToAddress: this.checkoutForm.get('deliveryForm').value,
+      shipToAddress: this.checkoutForm.get('addressForm').value
     };
   }
 }

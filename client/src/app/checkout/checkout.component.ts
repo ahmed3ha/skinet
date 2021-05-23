@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-
 import { AccountService } from '../account/account.service';
 
 @Component({
@@ -42,13 +41,13 @@ export class CheckoutComponent implements OnInit {
 
   getAddressFromValues() {
     this.accountService.getUserAddress().subscribe(
-      (address) => {
+      address => {
         if (address) {
           this.checkoutForm.get('addressForm').patchValue(address);
         }
       },
-      (error) => {
-        console.log('bbbbbbbbbb');
+      error => {
+        console.log(error);
       }
     );
   }
