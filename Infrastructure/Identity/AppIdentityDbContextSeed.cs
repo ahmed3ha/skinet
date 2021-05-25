@@ -21,7 +21,7 @@ namespace Infrastructure.Identity
                         Street= "10 the Nasr city",
                         City = "New York",
                         State = "NY",
-                        Zipcode = "90210"
+                        ZipCode = "90210"
                     }
                 };
                 await userManager.CreateAsync(user,"Pa$$w0rd");
